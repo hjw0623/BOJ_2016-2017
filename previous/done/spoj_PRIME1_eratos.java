@@ -1,4 +1,4 @@
-package math;
+package previous.done;
 
 import java.util.ArrayList;
 import java.util.Scanner;

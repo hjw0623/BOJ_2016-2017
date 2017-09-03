@@ -1,6 +1,7 @@
+package previous.done;
 import java.util.Scanner;
 
-public class Main {
+public class BOJ_13458 {
 	static int n;
 	static int a[];
 	static int b, c;

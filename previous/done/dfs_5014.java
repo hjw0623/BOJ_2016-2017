@@ -1,4 +1,4 @@
-package Baekjoon_2017_last_dfs_4_5;
+package previous.done;
 
 import java.util.Scanner;
 

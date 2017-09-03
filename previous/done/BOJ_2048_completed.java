@@ -1,3 +1,4 @@
+package previous.done;
 import java.util.Scanner;
 /*
 10
@@ -36,7 +37,7 @@ import java.util.Scanner;
 32
 -->32
  */
-public class Main {
+public class BOJ_2048_completed {
 	/**
 	 * @param 2048
 	 */

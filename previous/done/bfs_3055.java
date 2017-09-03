@@ -1,4 +1,4 @@
-package Baekjoon_2017_last_bfs_4_5;
+package previous.done;
 
 import java.io.BufferedReader;
 import java.io.IOException;

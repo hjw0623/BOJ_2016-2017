@@ -1,4 +1,4 @@
-package algorithm_intermid;
+package previous.done;
 
 import java.io.BufferedReader;
 import java.io.IOException;

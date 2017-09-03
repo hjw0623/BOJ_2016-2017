@@ -1,4 +1,4 @@
-package boj;
+package previous.done;
 //https://www.acmicpc.net/problem/14500
 import java.util.Arrays;
 //LEFT 0, UP 1, RIGHT 2, DOWN 3
@@ -49,7 +49,7 @@ public class BOJ_14501 {
 
 	static int result = 0;
 	static void solve(int sum, int i) {
-		// i°¡ Nº¸´Ù Å©¸é sumÀ» ¹İÈ¯.
+		// iï¿½ï¿½ Nï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ sumï¿½ï¿½ ï¿½ï¿½È¯.
 		if (i > N+1 )
 			return ;		
 		if (i == N+1 ){

@@ -1,4 +1,4 @@
-package boj;
+package previous.done;
 //https://www.acmicpc.net/problem/14500
 import java.util.Arrays;
 //LEFT 0, UP 1, RIGHT 2, DOWN 3
@@ -38,7 +38,7 @@ public class BOJ_14500 {
 		System.out.println(max);
 	}
 
-	// left up right down ¼ø
+	// left up right down ï¿½ï¿½
 	static int dx[] = { 0, -1, 0, 1 };
 	static int dy[] = { -1, 0, 1, 0 };
 
@@ -47,7 +47,7 @@ public class BOJ_14500 {
 		if (count == 3) {
 			return dp[x][y][3] = map[x][y];
 		}
-		// Àç±Í Å½»ö
+		// ï¿½ï¿½ï¿½ Å½ï¿½ï¿½
 		int left = 0, right = 0, up = 0, down = 0;
 		if (dir == LEFT) {
 			int nextx = x + dx[LEFT];
@@ -90,7 +90,7 @@ public class BOJ_14500 {
 		tmp = tmp > down ? tmp : down;
 		if(count==0){
 		int cross = findCross(x,y);
-		// ½ÊÀÚ¸ð¾ç-1°³ ºñ±³
+		// ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½-1ï¿½ï¿½ ï¿½ï¿½
 		tmp = tmp>cross? tmp:cross;
 		}
 		return dp[x][y][count] = tmp + map[x][y];
@@ -103,7 +103,7 @@ public class BOJ_14500 {
 		else
 			return true;
 	}
-	//½ÊÀÚ¸ð¾ç¿¡¼­ °¡Àå ÀÛÀº °ª ÇÏ³ª »« ¤Ç ºí·°
+	//ï¿½ï¿½ï¿½Ú¸ï¿½ç¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ï³ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
 	public static int findCross(int i, int j) {
 		int cross = 0;
 		int tmp[] = new int[4];
@@ -134,7 +134,7 @@ public class BOJ_14500 {
 			tmp[3] = map[nx3][ny3];
 			count++;
 		}
-		// ¸¸¾à ¹üÀ§ ¾È¿¡ ÀÖ´Â °Ô 2°³»ÓÀÌ¶ó¸é 0À» ¸®ÅÏ
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		if (count <= 2) {
 			count = 0;
 		} 
