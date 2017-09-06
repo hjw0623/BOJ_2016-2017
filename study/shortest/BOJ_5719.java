@@ -94,7 +94,7 @@ public class BOJ_5719 {
 ////				break;
 ////			}
 //			
-////			adj = new int[nV + 1][nV + 1];
+////		adj = new int[nV + 1][nV + 1];
 //			dist = new int[nV+1];
 //			Arrays.fill(dist, INF);
 //			adj = new ArrayList<ArrayList<Edge>>();
