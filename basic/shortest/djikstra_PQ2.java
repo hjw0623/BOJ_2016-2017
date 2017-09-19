@@ -56,7 +56,6 @@ public class djikstra_PQ2 {
 		}
 		
 		
-		
 		//dijkstra 시작 
 		PriorityQueue<Element2> pq = new PriorityQueue<Element2>();
 
