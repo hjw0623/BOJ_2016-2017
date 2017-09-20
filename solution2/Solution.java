@@ -67,11 +67,13 @@ public class Solution {
 						break;
 					}
 				}
-				if(!checkThirdJaum) {
-					i= i+2;
+				
+				if (!checkThirdJaum) {
+					i = i + 2;
 					continue;
 				}
-				if(checkFirstJaum&&checkThirdJaum&&checkSecondJaum){
+
+				if (checkFirstJaum && checkThirdJaum && checkSecondJaum) {
 					jaumTriple++;
 					break;
 				}
