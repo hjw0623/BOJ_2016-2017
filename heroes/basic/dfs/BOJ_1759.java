@@ -26,11 +26,13 @@ public class BOJ_1759 {
 		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < C; i++) {
 			char tmp = st.nextToken().charAt(0);
-			
+			System.out.println(tmp);
+
 			alpha[i] = ""+tmp;
 		}
 		
 		Arrays.sort(alpha);
+		
 		dfs(L, alpha, "", 0);
 	}
 
@@ -56,6 +58,7 @@ public class BOJ_1759 {
 			for(int i=0; i<moum.length; i++){
 				if(x == moum[i])
 					mo+=1;
+					
 				else
 					ja+=1;
 			}

@@ -12,7 +12,6 @@ public class BOJ_9095 {
 			return dp[n];
 		if(n<=3)
 			return dp[n];
-		
 		//recursive
 		else{
 			dp[n] = solve(n-1)+solve(n-2)+solve(n-3);
