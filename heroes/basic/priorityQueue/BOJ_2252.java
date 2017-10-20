@@ -52,7 +52,7 @@ class Graph {
 		boolean visited[] = new boolean[V];
 		for (int i = 0; i < V; i++)
 			visited[i] = false;
-
+		
 		// 재귀 보조 함수를 호출하여 모든 vertex를 저장
 		for (int i = 0; i < V; i++) {
 			if (visited[i] == false) { 	//방문하지 않은 정점이라면 방문 

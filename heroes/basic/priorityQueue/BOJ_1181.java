@@ -16,15 +16,22 @@ public class BOJ_1181 {
 			if (o1.length() < o2.length())
 				return -1;
 			else if (o1.length() == o2.length()) {
-				for (int i = 0; i < o1.length(); i++) {
-					if (o1.charAt(i) < o2.charAt(i)) {
-						return -1;
-					} else if (o1.charAt(i) == o2.charAt(i) && i < o1.length() - 1) {
-						continue;
-					} else {
-						return 1;
-					}
+				if(o1.compareTo(o2)<0){
+					return -1;
+				}else{
+					return 1;
 				}
+	
+//				for (int i = 0; i < o1.length(); i++) {
+//					
+////					if (o1.charAt(i) < o2.charAt(i)) {
+//						return -1;
+//					} else if (o1.charAt(i) == o2.charAt(i) && i < o1.length() - 1) {
+//						continue;
+//					} else {
+//						return 1;
+//					}
+//				}
 			}
 			return 1;
 		}

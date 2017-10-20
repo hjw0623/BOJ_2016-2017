@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.util.Collections;
 
 //문제 조건상입력값이 최대 1천만번 이므로 제한된 시간내에 O(NlogN)으로도 시간초과가 날 수 있다. 
 //Counting Sort를 한다. 
@@ -25,6 +26,7 @@ public class BOJ_10989 {
 				tmpMax = arr[i];
 			}
 		}
+		
 		int count[] = new int [tmpMax+1];
 		int result[] = new int [arr.length+1];
 		for(int i=0; i<arr.length; i++){
@@ -40,10 +42,11 @@ public class BOJ_10989 {
 			result[count[arr[i]]]= arr[i];
 			count[arr[i]]--; //count--
 		}
-		
+		StringBuilder sb = new StringBuilder ();
 		for(int i=1; i<result.length; i++){
-			out.println(result[i]);
+			sb.append(result[i]).append("\n");
 		}
+		out.print(sb.toString());
 		print.flush();
 		print.close();
 	}

@@ -42,7 +42,6 @@ public class BOJ_1937 {
 		if(dp[x][y]!=0){
 			return dp[x][y];
 		}
-		
 		int retMax = 1;
 		//recursive
 		for(int k=0; k<4; k++){

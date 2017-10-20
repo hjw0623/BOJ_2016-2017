@@ -23,10 +23,8 @@ S의 최솟값을 출력하는 프로그램을 작성하시오.
  */
 public class BOJ_1026 {
 	static class Descending implements Comparator<Integer>{
-
 		@Override
 		public int compare(Integer o1, Integer o2) {
-
 			return o1 > o2 ? -1 : 1;
 		}
 	}
